@@ -8,7 +8,7 @@ public interface TaskService {
 
     void saveTasks();
 
-    void addTask(String description);
+    int addTask(String description);
 
     void updateTask(int id, String description);
 

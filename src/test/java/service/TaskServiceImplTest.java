@@ -43,6 +43,12 @@ public class TaskServiceImplTest {
         assertEquals(2, secondTask.getId());
     }
 
+    void new_task_id_should_be_returned_after_add() {
+        int taskId = taskService.addTask("Practice Java");
+
+        assertEquals(1, taskId);
+    }
+
     @Test
     void new_task_description_should_be_the_as_same_as_adding_time_without_updating() {
         addOneTasksToTaskService();

@@ -5,6 +5,7 @@ import model.TaskStatus;
 import repository.TaskRepository;
 import exception.NoSuchTaskException;
 
+import java.io.IOException;
 import java.util.Set;
 import java.util.List;
 import java.time.LocalDateTime;
@@ -28,9 +29,11 @@ public class TaskServiceImpl implements TaskService {
     }
 
     @Override
-    public void addTask(String description) {
+    public int addTask(String description) {
         LocalDateTime now = now();
-        tasks.add(new Task(getNewId(), description, TODO, now, now));
+        Task task = new Task(getNewId(), description, TODO, now, now);
+        tasks.add(task);
+        return task.getId();
     }
 
     @Override
