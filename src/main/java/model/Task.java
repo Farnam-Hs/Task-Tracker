@@ -67,7 +67,7 @@ public class Task implements Comparable<Task> {
 
     @Override
     public String toString() {
-        return String.format("[Task: %d] [Description: %s] [Status: %s] [Created: %s] [Updated: %s]",
+        return String.format("[Task: %d | Description: %s | Status: %s | Created: %s | Updated: %s]",
                 this.id,
                 this.description,
                 this.status.getTitleCaseStatus(),
