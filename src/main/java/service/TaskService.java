@@ -2,11 +2,12 @@ package service;
 
 import model.Task;
 
+import java.io.IOException;
 import java.util.List;
 
 public interface TaskService {
 
-    void saveTasks();
+    void saveTasks() throws IOException;
 
     int addTask(String description);
 

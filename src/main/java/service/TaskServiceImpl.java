@@ -18,13 +18,13 @@ public class TaskServiceImpl implements TaskService {
     private final TaskRepository taskRepository;
     private final Set<Task> tasks;
 
-    public TaskServiceImpl(TaskRepository taskRepository) {
+    public TaskServiceImpl(TaskRepository taskRepository) throws IOException {
         this.taskRepository = taskRepository;
         this.tasks = taskRepository.getTasks();
     }
 
     @Override
-    public void saveTasks() {
+    public void saveTasks() throws IOException {
         taskRepository.saveTasks(tasks);
     }
 

@@ -6,6 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import service.repository.FakeTaskRepositoryImpl;
 
+import java.io.IOException;
 import java.util.List;
 
 import static model.TaskStatus.*;
@@ -16,7 +17,7 @@ public class TaskServiceImplTest {
     private TaskServiceImpl taskService;
 
     @BeforeEach
-    void setUp() {
+    void setUp() throws IOException {
         taskService = new TaskServiceImpl(new FakeTaskRepositoryImpl());
     }
 
