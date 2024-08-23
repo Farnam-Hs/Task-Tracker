@@ -19,7 +19,7 @@ A simple, lightweight Task Tracker application implemented in Java with a Comman
     cd Task-Tracker
     ```
 
-2. Compile and run `Application.java`:
+2. Compile and run `Application.java`
 
 ## Usage Example
 
