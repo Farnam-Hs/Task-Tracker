@@ -1,8 +1,10 @@
 # Task Tracker
 
+## 🎯 Overview
+
 A simple, lightweight Task Tracker application implemented in Java with a Command Line Interface (CLI). The project is designed to help users manage and track their tasks, offering features like adding, updating, viewing, and deleting tasks, all while storing data in a JSON file, ensuring your tasks are saved between sessions.
 
-## Features
+## ✨ Features
 
 - **Task Management:** Create, update, view, and delete tasks.
 - **Task Status Tracking:** Tasks can be marked as Todo, In-Progress, or Done using an intuitive CLI.
@@ -10,7 +12,7 @@ A simple, lightweight Task Tracker application implemented in Java with a Comman
 - **Formatted Output:** Displays tasks in a clean, well-organized table format within the terminal.
 - **Minimal Dependencies:** No external libraries are used, ensuring the project is simple and lightweight.
 
-## How to Run
+## 🚀 How to Run
 
 1. Clone the repository:
 
@@ -21,7 +23,7 @@ A simple, lightweight Task Tracker application implemented in Java with a Comman
 
 2. Compile and run `Application.java`
 
-## Usage Example
+## 📘 Usage Example
 
 
 
