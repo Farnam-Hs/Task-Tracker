@@ -1,4 +1,12 @@
-# Task Tracker
+---
+
+<div align="center">
+
+  # Task Tracker CLI
+  
+</div>
+  
+---
 
 ## 🎯 Overview
 
