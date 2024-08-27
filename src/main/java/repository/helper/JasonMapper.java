@@ -13,6 +13,8 @@ import static java.util.stream.Collectors.*;
 public class JasonMapper {
 
     public static String tasksToJson(Set<Task> tasks) {
+        if (tasks.isEmpty())
+            return "";
         return tasks.stream()
                 .map(JasonMapper::convertTaskToJson)
                 .collect(joining(",", "[", "]"));
