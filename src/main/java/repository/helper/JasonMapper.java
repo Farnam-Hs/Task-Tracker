@@ -5,6 +5,7 @@ import model.TaskStatus;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Set;
 
 import static java.util.stream.Collectors.*;
@@ -18,6 +19,8 @@ public class JasonMapper {
     }
 
     public static Set<Task> jsonToTasks(String json) {
+        if (json == null || json.isEmpty())
+            return new HashSet<>();
         return Arrays.stream(json.substring(2, json.length() - 2).split("},\\{"))
                 .map(JasonMapper::convertJsonToTask)
                 .collect(toSet());
